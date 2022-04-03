@@ -1,0 +1,24 @@
+{
+  "product": [
+    {
+      "name": "Peas",
+      "unit": "bag",
+      "value": 0.95
+    },
+    {
+      "name": "Eggs",
+      "unit": "dozen",
+      "value": 2.1
+    },
+    {
+      "name": "Mil",
+      "unit": "bottle",
+      "value": 1.3
+    },
+    {
+      "name": "Beans",
+      "unit": "can",
+      "value": 0.73
+    }
+  ]
+}

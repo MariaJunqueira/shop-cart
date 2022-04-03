@@ -1,0 +1,42 @@
+@import '../../../stylings/colors';
+
+section {
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+  }
+
+  & > div {
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #999;
+      padding: 5px 0;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 10px;
+      a {
+        color: $primary-color;
+      }
+      app-controls {
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+:host {
+  display: block;
+}

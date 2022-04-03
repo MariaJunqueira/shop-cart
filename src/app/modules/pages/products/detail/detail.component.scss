@@ -1,0 +1,57 @@
+@import '../../../../stylings/colors';
+@import '../../../../stylings/variables';
+
+section {
+  display: flex;
+  flex-direction: column;
+
+  & > div {
+    padding: 20px 0;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 250px;
+    }
+    & > div {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        app-price {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $sm-screen) {
+      & > div {
+        padding: 20px 12px 0 12px;
+        h3 {
+          order: 0;
+        }
+        p {
+          order: 2;
+        }
+        div {
+          order: 1;
+          padding: 10px 0;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  article {
+    h2 {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+:host {
+  display: block;
+}
